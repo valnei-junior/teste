@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    
+    background-image: url("Imagem/fundo\ portifolio\ 03.png");
+    background-color: rgb(112, 136, 25);
+    background-size: 100vw;
+}
+.cabecalho{ /*cor do botão Link (home e pagina dois)*/
+    padding: 2% 0% 0% 15%;
+    height: 50px; /*tamanho do cabecalho*/
+   
+ }
+ .cabecalho__menu{
+    display: flex;
+    gap: 80px;
+ }
+ .cabecalho__menu a{
+   font-size: 1.5rem;
+   font-weight: 600;
+   text-decoration: none;
+   transition: 1s;
+   color: aliceblue;
+   
+   
+ }
+ .cabecalho__menu a:hover{ /*o hover pra colocar animação*/
+    color: blue;
+    font-size: 1.7rem;
+    
+    
+ }
+
+.apresentacao{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10% 15%;
+    gap: 80px;
+    
+}
+
+.apresentacao_conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.apresentacao__conteudo__titulo{
+    font-size: 2.5rem;
+    color: blueviolet;
+    font-family: "Montserrat", sans-serif;
+}
+.titulo-destaque{
+    color: blanchedalmond;
+
+}
+.apresentacao__conteudo__texto{
+    font-size: 2.5rem;
+    color: aliceblue;
+
+}
+.apresentacao__conteudo__texto01{
+    font-size: 1.87rem;
+    color:bisque;
+    
+
+}
+.apresentacao__conteudo__texto02{
+    font-size: 1.56rem;
+    color:aqua;
+    text-align: justify;
+    font-family: "Montagu Slab", serif;
+    
+}
+.apresentacao__conteudo__texto04{
+    font-size: 1.56rem;
+    color: bisque;
+    text-align: end;
+    font-family: "Montagu Slab", serif;
+}
+.apresentacao__conteudo__texto03{
+    font-size: 1.25rem;
+    color:aliceblue;
+    text-align: justify;
+    font-family: "Montagu Slab", serif;
+}
+.imagem_whatsapp{
+                         /*height esticar a imagem*/
+    border-radius: 80px;
+    width: 50%;
+    
+}
+@media (max-width:1200px) { /*ajustando o site para celular*/
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 50%;
+    }
+    .cabecalho{
+        padding: 10%;
+    }
+    .apresentacao__conteudo__texto{
+        width: auto;
+    }
+    .cabecalho__menu{
+        justify-content: center;
+    }
+}
+.botao__link{
+    display: flex;
+    flex-direction: column; /*serve pra colocar um botao em cima do outro*/
+    justify-content:space-evenly;
+    align-items: center; /* serve para alinhar ao centro o botão*/
+    gap: 20px;/*espaçamento entre os botões*/
+}
+.apresentacao__link__subtitulo{
+    font-family:"Montagu Slab", serif ;/*adiciona tipo da fonte do botão*/
+    font-weight: 400; /*a largura da fonte*/
+    font-size: 1.5rem; /* tamanho da fonte*/
+    color: aliceblue;
+
+}
+
+.botao__link__link{
+                       /* retira o blackgrand-color (cor do botão)*/
+    border:2px solid white; /*deixar borda branca com a cor branca*/
+    width: 200px; /*deixa a fonte mais fina ou mais grossa*/
+    text-align:center;
+    border-radius: 8px; /*deixa o botao circular (instagran e youtube)*/
+    font-size: 1.12rem; /* tamanho da fonte do botao e o rem deixa a texto e imagem responsiva*/
+    text-decoration: none;
+    color: rgb(243, 240, 240);
+    font-family: "Montagu Slab", serif;;
+    font-weight: 800; 
+    width: 50%; /*tamanho da borda*/
+    gap: 10px; /* afastamento */
+    justify-content:center;
+    display: flex;/*permissão de centralização de texto e imagem no botão*/
+}
+.botao__link__link:hover{/*estiliza o botão you tube e instagran*/
+    background-color: rgb(160, 56, 122); /* cor do botão*/
+}
+
+
+.rodape{
+    color: blue;
+    background-color: rgb(242, 242, 245);
+    align-items: center;
+    text-align:center;
+    padding: 24px; /*aumenta a barra de rodapé*/
+ }
+ 
